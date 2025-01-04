@@ -1,2 +1,2 @@
-# quant_playground
-A playground of different quant related activities.
+# kraken api
+A place to play with the Kraken API
