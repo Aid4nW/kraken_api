@@ -1,1 +1,9 @@
+# Configuration files
 api_keys.ini
+
+# Generated files
+*.pdf
+
+# Python related files
+__pycache__/
+*.py[cod]

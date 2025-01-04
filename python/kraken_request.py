@@ -46,5 +46,5 @@ def request_public_ohlc(pair: str, interval: int, since: int):
     return make_request(url_extension, payload, headers)
 
 
-def make_request(url_extension: str, payload: Dict, headers: Dict):
+def make_request(url_extension: str, payload: Dict, headers: Dict[str, str]) -> requests.Response:
     return requests.request("GET", BASE_URL + url_extension, headers=headers, data=payload)
