@@ -1,3 +1,6 @@
+# Ignore MacOS additional file 
+.DS_store
+
 # Configuration files
 api_keys.ini
 
