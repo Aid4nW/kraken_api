@@ -3,7 +3,7 @@ from kraken_api import KrakenAPI
 
 if __name__ == "__main__":
     kraken_obj = KrakenAPI()
-    data = kraken_obj.get_coin_pair_data("TBTCEUR", 21600, 0).json()
+    data = kraken_obj.get_coin_pair_ohlc("TBTCEUR", 21600, 0).json()
     columns = ["time", "open", "high", "low", "close", "vwap", "volume", "count"]
     content = data["result"]["TBTCEUR"]
     dataframe = pd.DataFrame(content, columns=columns)
