@@ -41,7 +41,7 @@ class KrakenRequest:
         WITHDRAW_CANCEL = "private/WithdrawCancel"
         GET_WEB_SOCKET_TOKEN = "private/GetWebSocketsToken"
 
-    def request_public_ohlc(self, pair: str, interval: int, since: int):
+    def request_public_ohlc(self, pair: str, interval: int, since: int) -> requests.Response:
         url_extension = self.KrakenPublicEndpoints.OHLC.value + f"?pair={pair}&interval={interval}&since={since}"
         payload = {}
         headers = {
